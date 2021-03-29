@@ -8,94 +8,19 @@
 			"password": "mys3cr3T",
 	  		"firstName": "Firstname",
 			"lastName": "Lastname",
-			"primaryTelephone": "442071234567",
-			"homeAddress": {
-				"line1": "The White House",
-				"line2": "1600 Pennsylvania Ave NW",
-				"townCity": "Washington",
-				"postcode": "20500",
-				"state": "DC",
-				"country": "USA"
-			},
-			"reviews": [{
+			"favorites": [{
 					"Company Name": "Golden Compass",
 					"rating":"4",
                     "favorite": true,
 					"comment": "Blard blag blarh"
-				},
-				{
-					"Company Name": "SmorgusBoard",
-					"rating": "4",
-                    "favorite": false,
-					"comment": "Blard blag blarh"
-				},
-				{
-					"Company Name": "Muchos Baruchos",
-					"rating": "4",
-                    "favorite": true,
-					"comment": "Blard blag blarh"
-				},
-				{
-					"Company Name": "Flim Flam",
-					"rating": "4",
-                    "favorite": false,
-					"comment": "Blard blag blarh"
-				},
-				{
-					"Company Name": "Dardity D's",
-					"rating": "4",
-                    "favorite": true,
+				}
+			 ],
+			"reviews": [{
+					"Company Name": "Golden Compass",
 					"comment": "Blard blag blarh"
 				}
 			]
 
-		},
-		{
-			"id": "2",
-			"email" : "someone1@example.com",
-			"password": "mys3cr3T",
-	  		"firstName": "Firstname",
-			"lastName": "Lastname",
-			"primaryTelephone": "442071234567",
-			"homeAddress": {
-				"line1": "The White House",
-				"line2": "1600 Pennsylvania Ave NW",
-				"townCity": "Washington",
-				"postcode": "20500",
-				"state": "DC",
-				"country": "USA"
-			},
-			"reviews": [{
-					"Company Name": "Golden Compass",
-					"rating": "4",
-                    "favorite": true,
-					"comment": "Blard blag blarh"
-				},
-				{
-					"Company Name": "SmorgusBoard",
-					"rating": "4",
-                    "favorite": false,
-					"comment": "Blard blag blarh"
-				},
-				{
-					"Company Name": "Muchos Baruchos",
-					"rating": "4",
-                    "favorite": true,
-					"comment": "Blard blag blarh"
-				},
-				{
-					"Company Name": "Flim Flam",
-					"rating": "4",
-                    "favorite": false,
-					"comment": "Blard blag blarh"
-				},
-				{
-					"Company Name": "Dardity D's",
-					"rating": "4",
-                    "favorite": true,
-					"comment": "Blard blag blarh"
-				}
-			]
 		}
 	],
 

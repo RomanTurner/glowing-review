@@ -1,16 +1,12 @@
 import logo from './logo.svg';
 import './App.css';
-import Nav from './container/Nav.js'
-import Fragment from 'react'
+import Fragment from 'react';
+import Navigation from './container/Navigation';
+import SearchBar from './container/SearchPage';
 
 function App() {
   return (
-<>
-  <Nav/>
-  <Nav/>
-  <Nav/>
-</>
-    
+<div>Hi</div>
   );
 }
 
