@@ -4,11 +4,7 @@ import Nav from './container/Nav.js'
 
 function App() {
   return (
-<div>
-  <Nav/>
-  <Nav/>
-  <Nav/>
-</div>
+<Nav/>
   );
 }
 
