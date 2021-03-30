@@ -4,19 +4,19 @@
         {
 			"id": "1",
 			"email" : "someone1@example.com",
-			"image": "https://img1.looper.com/img/gallery/frodo-baggins-entire-backstory-explained/intro-1582640416.jpg",
+			"image": "https://s3-media0.fl.yelpcdn.com/photo/N8sHJJuroewE8rCpvaE0nw/o.jpg",
 			"password": "mys3cr3T",
 	  		"firstName": "Firstname",
 			"lastName": "Lastname",
 			"favorites": [{
-					"Company Name": "Golden Compass",
+					"companyName": "Golden Compass",
 					"rating":"4",
                     "favorite": true,
 					"comment": "Blard blag blarh"
 				}
 			 ],
 			"reviews": [{
-					"Company Name": "Golden Compass",
+					"companyName": "Golden Compass",
 					"comment": "Blard blag blarh"
 				}
 			]
@@ -26,8 +26,8 @@
 
     "businesses": [
         {
-			"Company Name": "Dardity D's",
-			"Overall-rating": "4",
+			"companyName": "Dardity D's",
+			"overallRating": "4",
 			"reviews": [
                 {
 					"user": "user id",
