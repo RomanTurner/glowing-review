@@ -4,7 +4,7 @@
         {
 			"id": "1",
 			"email" : "someone1@example.com",
-			"img-url": "https://img1.looper.com/img/gallery/frodo-baggins-entire-backstory-explained/intro-1582640416.jpg",
+			"image": "https://img1.looper.com/img/gallery/frodo-baggins-entire-backstory-explained/intro-1582640416.jpg",
 			"password": "mys3cr3T",
 	  		"firstName": "Firstname",
 			"lastName": "Lastname",

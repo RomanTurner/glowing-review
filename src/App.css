@@ -36,3 +36,36 @@
     transform: rotate(360deg);
   }
 }
+
+.my-name {
+  padding: 30px;
+  font-size: 25pt
+}
+
+.profile-image {
+  padding-left: 30px;
+  height:150px
+}
+
+.profile-location {
+  padding-left: 30px;
+  font-size: 15pt;
+}
+
+.profile-favorites {
+  padding-left: 30px;
+  padding-top: 40px;
+  padding-bottom: 20px;
+  font-size: 25pt;
+}
+
+.my-reviews {
+  padding-left: 30px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-size: 25pt;
+}
+
+.body {
+  background-color: red;
+}
