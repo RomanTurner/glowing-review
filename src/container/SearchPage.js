@@ -22,7 +22,10 @@ class SearchPage extends Component {
           <div className='ui two column grid'>
             <div className='column'>
               {this.props.restaurants.length === 0 ? null : (
-                <BusinessCardContainer restaurants={this.props.handleDisplay} />
+                <BusinessCardContainer
+                  favoriteRes={this.props.favoriteRes}
+                  restaurants={this.props.handleDisplay}
+                />
               )}
             </div>
             <div className='column'>
