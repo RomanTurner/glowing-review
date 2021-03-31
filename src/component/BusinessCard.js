@@ -63,11 +63,10 @@ function randomNum() {
     return Math.floor(Math.random()*4)
 }
 export default function BusinessCard(props) {
-  let x = glowShadow(props.info.likes)
     return (
       <>
         {/* Need to add onclick will go to business page */}
-        <div style={{ boxShadow: `${x}`}} class='ui card'>
+        <div style={{ boxShadow: `${glowShadow(props.info.likes)}`}} class='ui card'>
           <div class='image'>
             <img src={props.info.imgsrc[randomNum()]} />
           </div>
