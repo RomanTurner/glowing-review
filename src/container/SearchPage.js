@@ -3,59 +3,32 @@ import SearchBar from '../component/SearchBar';
 import SearchMap from "../component/SearchMap";
 import BusinessCardContainer from "./BusinessCardContainer";
 import { GoogleApiWrapper } from "google-maps-react";
+import MyProfile from "./MyProfile";
 
 const nyc = {
   lat: 40.754932,
   lng: -73.984016,
 };
 
-const restaurantUrl = "http://localhost:3000/restaurants";
 class SearchPage extends Component {
-  state = {
-    restaurants: [],
-    searchTerm: "",
-  };
-
-  componentDidMount() {
-    fetch(restaurantUrl)
-      .then((r) => r.json())
-      .then((restaurants) => this.setState({ restaurants }))
-      .catch((e) => console.error("e:", e));
-  }
-
-  onSearchChange = (e) => {
-    this.setState({
-      searchTerm: e.target.value,
-    });
-  };
-
-  handleDisplay = () => {
-    if (this.state.searchTerm.length > 0) {
-      return this.state.restaurants.filter((r) =>
-        r.name.toLowerCase().includes(this.state.searchTerm)
-      );
-    } else {
-      return this.state.restaurants;
-    }
-  };
 
   render() {
     return (
       <div>
         <div className='ui centered grid'>
-          <SearchBar onSearchChange={this.onSearchChange} />
+          <SearchBar onSearchChange={this.props.onSearchChange} />
         </div>
         <div className='ui segment'>
           <div className='ui two column grid'>
             <div className='column'>
-              {this.state.restaurants.length === 0 ? null : (
-                <BusinessCardContainer restaurants={this.handleDisplay()} />
+              {this.props.restaurants.length === 0 ? null : (
+                <BusinessCardContainer restaurants={this.props.handleDisplay} />
               )}
             </div>
             <div className='column'>
               <SearchMap
                 nyc={nyc}
-                places={this.handleDisplay()}
+                places={this.props.handleDisplay}
                 onReady={this.onReady}
                 google={this.props.google}
               />
