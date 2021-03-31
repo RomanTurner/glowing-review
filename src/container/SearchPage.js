@@ -2,9 +2,15 @@ import React, { Component } from "react";
 import SearchBar from '../component/SearchBar';
 import SearchMap from "../component/SearchMap";
 import BusinessCardContainer from "./BusinessCardContainer";
+import { GoogleApiWrapper } from "google-maps-react";
+
+const nyc = {
+  lat: 40.713829,
+  lng: -73.989667,
+};
 
 const restaurantUrl = "http://localhost:3000/restaurants";
-export default class SearchPage extends Component {
+class SearchPage extends Component {
   state = {
     restaurants: [],
     searchTerm: "",
@@ -47,8 +53,12 @@ export default class SearchPage extends Component {
               )}
             </div>
             <div className='column'>
-              Will Be A Map?
-              <SearchMap />
+              <SearchMap
+                nyc={nyc}
+                places={this.state.restaurants}
+                onReady={this.onReady}
+                google={this.props.google}
+              />
             </div>
           </div>
         </div>
@@ -56,3 +66,7 @@ export default class SearchPage extends Component {
     );
   }
 }
+
+export default GoogleApiWrapper({
+  apiKey: process.env.REACT_APP_GOOGLE_PLACES_API_KEY,
+})(SearchPage);

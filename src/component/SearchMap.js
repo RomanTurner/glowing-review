@@ -1,31 +1,36 @@
-import React from 'react';
+import React, { Component } from "react";
+import { Map, Marker } from "google-maps-react";
+const mapStyles = {
+  width: "100vw",
+  height: "100vh",
+};
+
+const markerMaker = (places) => {
+  return places.map((place) => (
+    <Marker
+      onClick={(e)=>console.log(place,"Hi")}
+      key={place.id}
+      position={{
+        lat: place.latlng.lat,
+        lng: place.latlng.lng,
+      }}
+    />
+  ));
+};
 
 export default function SearchMap(props) {
     return (
-      <div>
-        <div class='ui three cards'>
-          <div class='ui card'>
-            <div class='content'>
-              <div class='ui placeholder'>
-                <div class='square image'></div>
-              </div>
-            </div>
-          </div>
-          <div class='ui card'>
-            <div class='content'>
-              <div class='ui placeholder'>
-                <div class='square image'></div>
-              </div>
-            </div>
-          </div>
-          <div class='ui card'>
-            <div class='content'>
-              <div class='ui placeholder'>
-                <div class='square image'></div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+      <Map
+        google={props.google}
+        onReady={props.onReady}
+        zoom={12}
+        style={mapStyles}
+        initialCenter={{
+          lat: props.nyc.lat,
+          lng: props.nyc.lng,
+        }}
+      >
+        {markerMaker(props.places)}
+      </Map>
     );
 }
