@@ -24,7 +24,7 @@ export default class BusinessProfile extends Component {
                     {/* this.props.business.display_address */}
                     <div className="ui four column grid">
                         <div className="row"> 
-                            {/* {this.props.foods.map(food => <img> {food.image_url} </img>)} */}
+                            {this.props.foods.map(food => <img> {food.image_url} </img>)}
                         </div>
                     </div>
                 </div>

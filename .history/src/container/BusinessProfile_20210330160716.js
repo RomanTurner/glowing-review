@@ -10,7 +10,7 @@ export default class BusinessProfile extends Component {
         return (
             <div >
                 <Navigation/> 
-                <div className="Business-Main">
+                <div class=" photoHeader__373c0__YdvQE border-color--default__373c0__3-ifU" data-testid="photoHeader">
                     <h1 className="Bussiness-Name">Gary Danko</h1>
                     {/* this.props.business.name */}
                     <h3 className="Bussiness-Type">American (New), French, Wine Bars </h3>
@@ -22,10 +22,9 @@ export default class BusinessProfile extends Component {
                     {/* this.props.business.display_phone */}
                     <p className="Address">800 N Point St San Francisco, CA 94109</p>
                     {/* this.props.business.display_address */}
-                    <div className="ui four column grid">
-                        <div className="row"> 
-                            {/* {this.props.foods.map(food => <img> {food.image_url} </img>)} */}
-                        </div>
+                    <div className="Food Images">
+                        <img>
+                        </img>
                     </div>
                 </div>
                 <Reviews/>
