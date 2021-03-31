@@ -22,25 +22,5 @@
 			]
 
 		}
-	],
-
-    "businesses": [
-        {
-			"companyName": "Dardity D's",
-			"overallRating": "4",
-			"reviews": [
-                {
-					"user": "user id",
-					"rating": "4",
-					"comment": "Blard blag blarh"
-				},
-				{
-					"user": "user id",
-					"rating": "4",
-					"comment": "Blard blag blarh"
-				}
-			]
-	    }
-
-    ]
+	]
 }
