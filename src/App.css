@@ -6,6 +6,30 @@
   height: 40vmin;
   pointer-events: none;
 }
+.sun{
+  color: #fdc500;
+}
+/** Search Bar **/
+.centered{
+  background-color: #fff1c0 !important;
+}
+.massive{
+padding: 75px;
+}
+/***************/
+
+/** Business Cards **/
+#cardGlow, .ui.card, .ui.cards>.card{
+  /* -webkit-box-shadow: 5em 5em 5em black;
+  -moz-box-shadow: 5em 5em 5em black; */
+  box-shadow: .5em .5em 1em gold;
+}
+
+.card img {
+  max-height: 150px;
+  object-fit: cover;
+}
+/*****************/
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
@@ -39,7 +63,7 @@
 
 .my-name {
   padding: 30px;
-  font-size: 25pt
+  font-size: 25pt;
 }
 
 .profile-image {

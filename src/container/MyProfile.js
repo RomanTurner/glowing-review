@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import BusinessCardContainer from './BusinessCardContainer';
 import ReviewContainer from './ReviewContainer';
-import Profile from '../component/Profile'
+//import Profile from '../component/Profile'
 
 
 export default class MyProfile extends Component {
