@@ -5,8 +5,8 @@ import BusinessCardContainer from "./BusinessCardContainer";
 import { GoogleApiWrapper } from "google-maps-react";
 
 const nyc = {
-  lat: 40.713829,
-  lng: -73.989667,
+  lat: 40.754932,
+  lng: -73.984016,
 };
 
 const restaurantUrl = "http://localhost:3000/restaurants";
@@ -55,7 +55,7 @@ class SearchPage extends Component {
             <div className='column'>
               <SearchMap
                 nyc={nyc}
-                places={this.state.restaurants}
+                places={this.handleDisplay()}
                 onReady={this.onReady}
                 google={this.props.google}
               />

@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { Map, Marker } from "google-maps-react";
 const mapStyles = {
-  width: "100vw",
+  width: "48vw",
   height: "100vh",
 };
 
@@ -21,6 +21,7 @@ const markerMaker = (places) => {
 export default function SearchMap(props) {
     return (
       <Map
+        resetBoundsOnResize={true}
         google={props.google}
         onReady={props.onReady}
         zoom={12}
