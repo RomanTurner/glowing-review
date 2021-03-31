@@ -81,6 +81,7 @@ export default function BusinessCard(props) {
             <a>
               <i class='sun icon'></i>
               {glowGraph(props.info.likes)}
+              <button class="ui button" onClick={() => props.favoriteRes(props.info)}>Favorite</button>
             </a>
           </div>
         </div>
