@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import BusinessCardContainer from './BusinessCardContainer';
 import ReviewContainer from './ReviewContainer';
-// import Profile from '../component/Profile'
 // import BusinessCard from '../component/BusinessCard';
 
 

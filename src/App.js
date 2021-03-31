@@ -4,23 +4,26 @@ import Navigation from "./container/Navigation";
 import SearchPage from "./container/SearchPage";
 import "semantic-ui-css/semantic.min.css";
 import MyProfile from "./container/MyProfile";
-import Profile from "./component/Profile";
+
 
 export default class App extends Component {
-  
   state = {
     restaurants: [],
+    users: [{}],
     searchTerm: "",
-    // user: []
   };
 
-  componentDidMount= () => {
-    fetch("http://localhost:3000/restaurants")
+  componentDidMount = () => {
+    fetch("http://localhost:3000/data")
       .then((r) => r.json())
-      .then((restaurants) => this.setState({ restaurants }))
+      .then((data) =>
+        this.setState({
+          restaurants: data.restaurants,
+          users: data.users,
+        })
+      )
       .catch((e) => console.error("e:", e));
-  }
-
+  };
 
   onSearchChange = (e) => {
     this.setState({
@@ -38,27 +41,27 @@ export default class App extends Component {
     }
   };
 
-  // addFavorite = (restaurant) => {
-  //   fetch("http://localhost:3000/users", {
-  //     method: 'POST',
-  //     headers: {
-  //       'Content-Type': 'application/json'
-  //     },
-  //     body: JSON.stringify({
-
-  //     })
-  //   })
-  // }
-
   render() {
-  return (
-    <div>
-      <Navigation />
-      <SearchPage restaurants={this.state.restaurants} onSearchChange={this.onSearchChange} handleDisplay={this.handleDisplay()}/>
-      <Profile />
-    </div>
-  );
-}
+    return (
+      <div>
+        <Navigation />
+        <SearchPage
+          favoriteRes={this.favoriteRes}
+          restaurants={this.state.restaurants}
+          onSearchChange={this.onSearchChange}
+          handleDisplay={this.handleDisplay()}
+        />
+        <MyProfile
+          favoriteRes={this.favoriteRes}
+          userInfo={this.state.users[0]}
+        />
+      </div>
+    );
+  }
+
+  favoriteRes = (biz) => {
+    this.setState({users:[...this.state.users,biz]})
+ }
 }
 
 
