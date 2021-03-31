@@ -5,26 +5,31 @@ import Navigation from './Navigation'
 
 
 export default class BusinessProfile extends Component {
+    state = {
+        restaurants: []
+      };
+    
+      componentDidMount() {
+        fetch("http://localhost:3000/restaurants")
+          .then((r) => r.json())
+          .then((restaurants) => this.setState({ restaurants: restaurants[0] }))
+      }
 
     render() {
         return (
             <div >
                 <Navigation/> 
-                <div className="Business-Main">
-                    <h1 className="Bussiness-Name">Gary Danko</h1>
-                    {/* this.props.business.name */}
-                    <h3 className="Bussiness-Type">American (New), French, Wine Bars </h3>
-                    {/* this.props.business.categories */}
+                <div className="ui centered grid">
+                    <h1 className="Bussiness-Name">{this.state.restaurants.name}</h1>
+                    <h3 className="Bussiness-Type">{this.state.restaurants.cuisine_type} </h3>
                     <h4 className="Bussiness-Hours">9:00-5:00 </h4>
-                    {/* this.props.business.hours */}
+                    {/* {this.state.restaurants.operating_hours.Monday} */}
                     <button className="ui form">Write a Review</button>
                     <p className="Phone-Number">(415) 759-2060</p>
-                    {/* this.props.business.display_phone */}
-                    <p className="Address">800 N Point St San Francisco, CA 94109</p>
-                    {/* this.props.business.display_address */}
-                    <div className="ui four column grid">
+                    <p className="Address">{this.state.restaurants.address}</p>
+                    <div className="ui segment">
                         <div className="row"> 
-                            {/* {this.props.foods.map(food => <img> {food.image_url} </img>)} */}
+                        <img src={this.state.restaurants.imgsrc} />
                         </div>
                     </div>
                 </div>
