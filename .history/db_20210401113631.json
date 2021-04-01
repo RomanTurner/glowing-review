@@ -20,7 +20,6 @@
       },
       "cuisine_type": "Asian",
       "operating_hours": "5:30 pm - 11:00 pm",
-      "phone": "(917) 376-5660",
       "reviews": [
         {
           "user": "",
@@ -48,7 +47,7 @@
       },
       "cuisine_type": "Pizza",
       "operating_hours":"7:30 am - 11:00 pm",
-      "phone": "(917) 265-8378",
+      "phone": "(917) 376-5660",
       "reviews": [
         {
           "user": "",
@@ -76,7 +75,6 @@
       },
       "cuisine_type": "Asian",
       "operating_hours": "11:30 am - 2:00 am",
-      "phone": "(212) 966-9839",
       "reviews": [
         {
           "user": "",
@@ -104,7 +102,6 @@
       },
       "cuisine_type": "American",
       "operating_hours": "8:00 am - 10:30 pm",
-      "phone": "(212) 254-2246",
       "reviews": [
         {
           "user": "",
@@ -132,7 +129,6 @@
       },
       "cuisine_type": "Pizza",
       "operating_hours": "11:00 am - 12:00 am",
-      "phone": "(646) 747-0820",
       "reviews": [
         {
           "user": "",
@@ -160,7 +156,6 @@
       },
       "cuisine_type": "American",
       "operating_hours": "12:00 pm - 10:00 pm",
-      "phone": "(347) 294-4644",
       "reviews": [
         {
           "user": "",
@@ -188,7 +183,6 @@
       },
       "cuisine_type": "American",
       "operating_hours": "11:30 am - 10:00 pm",
-      "phone": "(212) 256-1192",
       "reviews": [
         {
           "user": "",
@@ -219,7 +213,6 @@
       },
       "cuisine_type": "American",
       "operating_hours": "11:30 am - 11:00 pm",
-      "phone": "(212) 677-6200",
       "reviews": [
         {
           "user": "",
@@ -249,7 +242,6 @@
       },
       "cuisine_type": "Asian",
       "operating_hours": "5:00 pm - 10:00 pm",
-      "phone": "(917) 868-8903",
       "reviews": [
         {
           "user": "",
@@ -278,7 +270,6 @@
       },
       "cuisine_type": "Mexican",
       "operating_hours": "5:00 pm - 12:00 am",
-      "phone": "(347) 448-6040",
       "reviews": [
         {
           "user": "",

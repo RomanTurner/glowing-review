@@ -19,8 +19,15 @@
         "lng": -73.989667
       },
       "cuisine_type": "Asian",
-      "operating_hours": "5:30 pm - 11:00 pm",
-      "phone": "(917) 376-5660",
+      "operating_hours": {
+        "Monday": "5:30 pm - 11:00 pm",
+        "Tuesday": "5:30 pm - 12:00 am",
+        "Wednesday": "5:30 pm - 12:00 am",
+        "Thursday": "5:30 pm - 12:00 am",
+        "Friday": "5:30 pm - 12:00 am",
+        "Saturday": "12:00 pm - 4:00 pm, 5:30 pm - 12:00 am",
+        "Sunday": "12:00 pm - 4:00 pm, 5:30 pm - 11:00 pm"
+      },
       "reviews": [
         {
           "user": "",
@@ -47,8 +54,15 @@
         "lng": -73.966393
       },
       "cuisine_type": "Pizza",
-      "operating_hours":"7:30 am - 11:00 pm",
-      "phone": "(917) 265-8378",
+      "operating_hours": {
+        "Monday": "5:30 pm - 11:00 pm",
+        "Tuesday": "5:30 pm - 11:00 pm",
+        "Wednesday": "5:30 pm - 11:00 pm",
+        "Thursday": "5:30 pm - 11:00 pm",
+        "Friday": "5:30 pm - 11:00 pm",
+        "Saturday": "5:00 pm - 11:30 pm",
+        "Sunday": "12:00 pm - 3:00 pm, 5:00 pm - 11:00 pm"
+      },
       "reviews": [
         {
           "user": "",
@@ -75,8 +89,15 @@
         "lng": -73.985414
       },
       "cuisine_type": "Asian",
-      "operating_hours": "11:30 am - 2:00 am",
-      "phone": "(212) 966-9839",
+      "operating_hours": {
+        "Monday": "11:30 am - 2:00 am",
+        "Tuesday": "11:30 am - 2:00 am",
+        "Wednesday": "11:30 am - 2:00 am",
+        "Thursday": "11:30 am - 2:00 am",
+        "Friday": "11:30 am - 6:00 am",
+        "Saturday": "11:30 am - 6:00 am",
+        "Sunday": "11:30 am - 2:00 am"
+      },
       "reviews": [
         {
           "user": "",
@@ -103,8 +124,15 @@
         "lng": -73.987501
       },
       "cuisine_type": "American",
-      "operating_hours": "8:00 am - 10:30 pm",
-      "phone": "(212) 254-2246",
+      "operating_hours": {
+        "Monday": "8:00 am - 10:30 pm",
+        "Tuesday": "8:00 am - 10:30 pm",
+        "Wednesday": "8:00 am - 10:30 pm",
+        "Thursday": "8:00 am - 2:30 am",
+        "Friday": "8:00 am - Sat",
+        "Saturday": "Open 24 hours",
+        "Sunday": "Sat - 10:30 pm"
+      },
       "reviews": [
         {
           "user": "",
@@ -131,8 +159,15 @@
         "lng": -73.933585
       },
       "cuisine_type": "Pizza",
-      "operating_hours": "11:00 am - 12:00 am",
-      "phone": "(646) 747-0820",
+      "operating_hours": {
+        "Monday": "11:00 am - 12:00 am",
+        "Tuesday": "11:00 am - 12:00 am",
+        "Wednesday": "11:00 am - 12:00 am",
+        "Thursday": "11:00 am - 12:00 am",
+        "Friday": "11:00 am - 12:00 am",
+        "Saturday": "10:00 am - 12:00 am",
+        "Sunday": "10:00 am - 12:00 am"
+      },
       "reviews": [
         {
           "user": "",
@@ -159,8 +194,15 @@
         "lng": -74.016162
       },
       "cuisine_type": "American",
-      "operating_hours": "12:00 pm - 10:00 pm",
-      "phone": "(347) 294-4644",
+      "operating_hours": {
+        "Monday": "Closed",
+        "Tuesday": "12:00 pm - 10:00 pm",
+        "Wednesday": "12:00 pm - 10:00 pm",
+        "Thursday": "12:00 pm - 10:00 pm",
+        "Friday": "12:00 pm - 11:00 pm",
+        "Saturday": "12:00 pm - 11:00 pm",
+        "Sunday": "12:00 pm - 9:00 pm"
+      },
       "reviews": [
         {
           "user": "",
@@ -187,8 +229,15 @@
         "lng": -73.983645
       },
       "cuisine_type": "American",
-      "operating_hours": "11:30 am - 10:00 pm",
-      "phone": "(212) 256-1192",
+      "operating_hours": {
+        "Monday": "11:30 am - 10:00 pm",
+        "Tuesday": "Closed",
+        "Wednesday": "11:30 am - 10:00 pm",
+        "Thursday": "11:30 am - 10:00 pm",
+        "Friday": "11:30 am - 10:00 pm",
+        "Saturday": "11:30 am - 10:00 pm",
+        "Sunday": "11:30 am - 10:00 pm"
+      },
       "reviews": [
         {
           "user": "",
@@ -201,15 +250,10 @@
       "name": "The Dutch",
       "neighborhood": "Manhattan",
       "imgsrc": [
-        "https://s3-media0.fl.yelpcdn.com/bphoto/02haFvefypUj0KGQNMye0A/o.jpg",
-        "https://s3-media0.fl.yelpcdn.com/bphoto/Ja-prL-5iDJlfu1fGG4prA/o.jpg",
-        "https://s3-media0.fl.yelpcdn.com/bphoto/S3xMnuQPWQoXOt6ZOFgImQ/o.jpg",
-        "https://s3-media0.fl.yelpcdn.com/bphoto/IJg3p29Wv28TsLfZJDb1Og/o.jpg",
-        "https://s3-media0.fl.yelpcdn.com/bphoto/lpsE1uD8GB8DVldPmgsyqw/o.jpg",
-        "https://images.getbento.com/accounts/35aeb01e46538353d993d3a286385546/media/V1s9LskZQOKot4ZLWXF0_TheDutch_EvanSung.jpg?w=1800&fit=max&auto=compress,format",
-        "https://s3-media0.fl.yelpcdn.com/bphoto/y0uEci7RsI9bumiMIesXSg/o.jpg",
-        "https://s3-media0.fl.yelpcdn.com/bphoto/AhzUXz5efCFOLA-yyz9TFQ/o.jpg"
-
+        "https://images.pexels.com/photos/6287544/pexels-photo-6287544.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
+        "https://images.pexels.com/photos/33162/food-restaurant-menu-asia.jpg?auto=compress&cs=tinysrgb&dpr=2&w=500",
+        "https://images.pexels.com/photos/955137/pexels-photo-955137.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
+        "https://images.pexels.com/photos/2347311/pexels-photo-2347311.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
       ],
       "address": "131 Sullivan St, New York, NY 10012",
       "likes": 0,
@@ -218,8 +262,15 @@
         "lng": -74.002082
       },
       "cuisine_type": "American",
-      "operating_hours": "11:30 am - 11:00 pm",
-      "phone": "(212) 677-6200",
+      "operating_hours": {
+        "Monday": "11:30 am - 3:00 pm, 5:30 pm - 11:00 pm",
+        "Tuesday": "11:30 am - 3:00 pm, 5:30 pm - 11:00 pm",
+        "Wednesday": "11:30 am - 3:00 pm, 5:30 pm - 11:00 pm",
+        "Thursday": "11:30 am - 3:00 pm, 5:30 pm - 11:00 pm",
+        "Friday": "11:30 am - 3:00 pm, 5:30 pm - 11:30 pm",
+        "Saturday": "10:00 am - 3:00 pm, 5:30 pm - 11:30 pm",
+        "Sunday": "10:00 am - 3:00 pm, 5:30 pm - 11:00 pm"
+      },
       "reviews": [
         {
           "user": "",
@@ -232,14 +283,10 @@
       "name": "Mu Ramen",
       "neighborhood": "Queens",
       "imgsrc": [
-        "https://s3-media0.fl.yelpcdn.com/bphoto/m-hlaW5DCgmHO-XM5wnFtQ/o.jpg",
-        "https://s3-media0.fl.yelpcdn.com/bphoto/WJhgjHB22MBJqiO0GG9bKA/o.jpg",
-        "https://s3-media0.fl.yelpcdn.com/bphoto/iDsB-KGiZQMszj8peXozrQ/o.jpg",
-        "https://s3-media0.fl.yelpcdn.com/bphoto/oJxyL1GrnOPEk_qIDKTxzQ/o.jpg",
-        "https://s3-media0.fl.yelpcdn.com/bphoto/KpYzBswEgxts0M6ifOIaXg/o.jpg",
-        "https://s3-media0.fl.yelpcdn.com/bphoto/KMpJj3cLgkWSLfNaG14xtg/o.jpg",
-        "https://s3-media0.fl.yelpcdn.com/bphoto/bxSnxr6GMBecdnkWJu4Qww/o.jpg",
-        "https://s3-media0.fl.yelpcdn.com/bphoto/RUDCSYIgnc30jJnH2rvDjQ/o.jpg"
+        "https://images.pexels.com/photos/6287544/pexels-photo-6287544.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
+        "https://images.pexels.com/photos/33162/food-restaurant-menu-asia.jpg?auto=compress&cs=tinysrgb&dpr=2&w=500",
+        "https://images.pexels.com/photos/955137/pexels-photo-955137.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
+        "https://images.pexels.com/photos/2347311/pexels-photo-2347311.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
       ],
       "address": "1209 Jackson Ave, Queens, NY 11101",
       "likes": 0,
@@ -248,8 +295,15 @@
         "lng": -73.950652
       },
       "cuisine_type": "Asian",
-      "operating_hours": "5:00 pm - 10:00 pm",
-      "phone": "(917) 868-8903",
+      "operating_hours": {
+        "Monday": "5:00 pm - 10:00 pm",
+        "Tuesday": "5:00 pm - 10:00 pm",
+        "Wednesday": "5:00 pm - 10:00 pm",
+        "Thursday": "5:00 pm - 10:00 pm",
+        "Friday": "5:00 pm - 11:00 pm",
+        "Saturday": "5:00 pm - 11:00 pm",
+        "Sunday": "5:00 pm - 10:00 pm"
+      },
       "reviews": [
         {
           "user": "",
@@ -262,13 +316,10 @@
       "name": "Casa Enrique",
       "neighborhood": "Queens",
       "imgsrc": [
-        "https://s3-media0.fl.yelpcdn.com/bphoto/SS_nIHb3C_Ar020zYBdntg/o.jpg",
-        "https://s3-media0.fl.yelpcdn.com/bphoto/jup0p6BFbrwDxHIUYWepzw/o.jpg",
-        "https://s3-media0.fl.yelpcdn.com/bphoto/_Ng5ktK8poj0WlZOi_i_Aw/o.jpg",
-        "https://s3-media0.fl.yelpcdn.com/bphoto/Mr5CS2stQLMYRpCJhmShFg/o.jpg",
-        "https://s3-media0.fl.yelpcdn.com/bphoto/tkL8Qk8SOMNBht-Cvcvbvw/o.jpg",
-        "https://s3-media0.fl.yelpcdn.com/bphoto/20ejWnqtIIXa0Sys3X-BYA/o.jpg",
-        "https://s3-media0.fl.yelpcdn.com/bphoto/xjXDFeJ7wcBq3Z1UMjP7Lw/o.jpg"
+        "https://images.pexels.com/photos/6287544/pexels-photo-6287544.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
+        "https://images.pexels.com/photos/33162/food-restaurant-menu-asia.jpg?auto=compress&cs=tinysrgb&dpr=2&w=500",
+        "https://images.pexels.com/photos/955137/pexels-photo-955137.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
+        "https://images.pexels.com/photos/2347311/pexels-photo-2347311.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
       ],
       "address": "5-48 49th Ave, Queens, NY 11101",
       "likes": 0,
@@ -277,8 +328,15 @@
         "lng": -73.954235
       },
       "cuisine_type": "Mexican",
-      "operating_hours": "5:00 pm - 12:00 am",
-      "phone": "(347) 448-6040",
+      "operating_hours": {
+        "Monday": "5:00 pm - 12:00 am",
+        "Tuesday": "5:00 pm - 12:00 am",
+        "Wednesday": "5:00 pm - 12:00 am",
+        "Thursday": "5:00 pm - 12:00 am",
+        "Friday": "5:00 pm - 12:00 am",
+        "Saturday": "11:00 am - 12:00 am",
+        "Sunday": "11:00 am - 12:00 am"
+      },
       "reviews": [
         {
           "user": "",

@@ -27,7 +27,7 @@ export default class BusinessProfile extends Component {
             
                     </h4>
                     <button className="ui form">Write a Review</button>
-                    <p className="Phone-Number">{this.props.business.phone}</p>
+                    <p className="Phone-Number">(415) 759-2060</p>
                     <p className="Address">{this.props.business.address}</p>
                     <div className="ui row">
                         <div  id="images" > 

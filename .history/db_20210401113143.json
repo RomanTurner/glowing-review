@@ -20,7 +20,6 @@
       },
       "cuisine_type": "Asian",
       "operating_hours": "5:30 pm - 11:00 pm",
-      "phone": "(917) 376-5660",
       "reviews": [
         {
           "user": "",
@@ -48,7 +47,6 @@
       },
       "cuisine_type": "Pizza",
       "operating_hours":"7:30 am - 11:00 pm",
-      "phone": "(917) 265-8378",
       "reviews": [
         {
           "user": "",
@@ -76,7 +74,6 @@
       },
       "cuisine_type": "Asian",
       "operating_hours": "11:30 am - 2:00 am",
-      "phone": "(212) 966-9839",
       "reviews": [
         {
           "user": "",
@@ -103,8 +100,15 @@
         "lng": -73.987501
       },
       "cuisine_type": "American",
-      "operating_hours": "8:00 am - 10:30 pm",
-      "phone": "(212) 254-2246",
+      "operating_hours": {
+        "Monday": "8:00 am - 10:30 pm",
+        "Tuesday": "8:00 am - 10:30 pm",
+        "Wednesday": "8:00 am - 10:30 pm",
+        "Thursday": "8:00 am - 2:30 am",
+        "Friday": "8:00 am - Sat",
+        "Saturday": "Open 24 hours",
+        "Sunday": "Sat - 10:30 pm"
+      },
       "reviews": [
         {
           "user": "",
@@ -131,8 +135,15 @@
         "lng": -73.933585
       },
       "cuisine_type": "Pizza",
-      "operating_hours": "11:00 am - 12:00 am",
-      "phone": "(646) 747-0820",
+      "operating_hours": {
+        "Monday": "11:00 am - 12:00 am",
+        "Tuesday": "11:00 am - 12:00 am",
+        "Wednesday": "11:00 am - 12:00 am",
+        "Thursday": "11:00 am - 12:00 am",
+        "Friday": "11:00 am - 12:00 am",
+        "Saturday": "10:00 am - 12:00 am",
+        "Sunday": "10:00 am - 12:00 am"
+      },
       "reviews": [
         {
           "user": "",
@@ -159,8 +170,15 @@
         "lng": -74.016162
       },
       "cuisine_type": "American",
-      "operating_hours": "12:00 pm - 10:00 pm",
-      "phone": "(347) 294-4644",
+      "operating_hours": {
+        "Monday": "Closed",
+        "Tuesday": "12:00 pm - 10:00 pm",
+        "Wednesday": "12:00 pm - 10:00 pm",
+        "Thursday": "12:00 pm - 10:00 pm",
+        "Friday": "12:00 pm - 11:00 pm",
+        "Saturday": "12:00 pm - 11:00 pm",
+        "Sunday": "12:00 pm - 9:00 pm"
+      },
       "reviews": [
         {
           "user": "",
@@ -187,8 +205,15 @@
         "lng": -73.983645
       },
       "cuisine_type": "American",
-      "operating_hours": "11:30 am - 10:00 pm",
-      "phone": "(212) 256-1192",
+      "operating_hours": {
+        "Monday": "11:30 am - 10:00 pm",
+        "Tuesday": "Closed",
+        "Wednesday": "11:30 am - 10:00 pm",
+        "Thursday": "11:30 am - 10:00 pm",
+        "Friday": "11:30 am - 10:00 pm",
+        "Saturday": "11:30 am - 10:00 pm",
+        "Sunday": "11:30 am - 10:00 pm"
+      },
       "reviews": [
         {
           "user": "",
@@ -218,8 +243,15 @@
         "lng": -74.002082
       },
       "cuisine_type": "American",
-      "operating_hours": "11:30 am - 11:00 pm",
-      "phone": "(212) 677-6200",
+      "operating_hours": {
+        "Monday": "11:30 am - 3:00 pm, 5:30 pm - 11:00 pm",
+        "Tuesday": "11:30 am - 3:00 pm, 5:30 pm - 11:00 pm",
+        "Wednesday": "11:30 am - 3:00 pm, 5:30 pm - 11:00 pm",
+        "Thursday": "11:30 am - 3:00 pm, 5:30 pm - 11:00 pm",
+        "Friday": "11:30 am - 3:00 pm, 5:30 pm - 11:30 pm",
+        "Saturday": "10:00 am - 3:00 pm, 5:30 pm - 11:30 pm",
+        "Sunday": "10:00 am - 3:00 pm, 5:30 pm - 11:00 pm"
+      },
       "reviews": [
         {
           "user": "",
@@ -248,8 +280,15 @@
         "lng": -73.950652
       },
       "cuisine_type": "Asian",
-      "operating_hours": "5:00 pm - 10:00 pm",
-      "phone": "(917) 868-8903",
+      "operating_hours": {
+        "Monday": "5:00 pm - 10:00 pm",
+        "Tuesday": "5:00 pm - 10:00 pm",
+        "Wednesday": "5:00 pm - 10:00 pm",
+        "Thursday": "5:00 pm - 10:00 pm",
+        "Friday": "5:00 pm - 11:00 pm",
+        "Saturday": "5:00 pm - 11:00 pm",
+        "Sunday": "5:00 pm - 10:00 pm"
+      },
       "reviews": [
         {
           "user": "",
@@ -277,8 +316,15 @@
         "lng": -73.954235
       },
       "cuisine_type": "Mexican",
-      "operating_hours": "5:00 pm - 12:00 am",
-      "phone": "(347) 448-6040",
+      "operating_hours": {
+        "Monday": "5:00 pm - 12:00 am",
+        "Tuesday": "5:00 pm - 12:00 am",
+        "Wednesday": "5:00 pm - 12:00 am",
+        "Thursday": "5:00 pm - 12:00 am",
+        "Friday": "5:00 pm - 12:00 am",
+        "Saturday": "11:00 am - 12:00 am",
+        "Sunday": "11:00 am - 12:00 am"
+      },
       "reviews": [
         {
           "user": "",
