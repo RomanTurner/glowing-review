@@ -1,0 +1,103 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+.sun{
+  color: #fdc500;
+}
+/** Search Bar **/
+.centered{
+  background-color: #fff1c0 !important;
+}
+.massive{
+padding: 75px;
+}
+/***************/
+
+/** Business Cards **/
+#cardGlow, .ui.card, .ui.cards>.card{
+  /* -webkit-box-shadow: 5em 5em 5em black;
+  -moz-box-shadow: 5em 5em 5em black; */
+  box-shadow: .5em .5em 1em gold;
+}
+
+.card img {
+  max-height: 150px;
+  object-fit: cover;
+}
+/*****************/
+
+#title{
+  flex: auto;
+  text-align: center;
+  padding-top: 5px;
+  color: #ffff66;
+  text-shadow: 0 0 1.5px #000;
+  font-size: 30px;
+  
+}
+
+#navbar{
+  background:lightyellow;
+  font-family: sans-serif;
+  
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+
+.my-name {
+  padding: 30px;
+  font-size: 25pt;
+}
+
+.profile-image {
+  padding-left: 30px;
+  padding-bottom: 30px;
+}
+
+.profile-location {
+  padding-left: 30px;
+  font-size: 15pt;
+}
+
+#profile-favorites {
+  padding-left: 30px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  font-size: 25pt;
+  font-style: oblique;
+}
+
+.my-reviews {
+  padding-left: 30px;
+  padding-top: 20px;
+  padding-bottom: 40px;
+  font-size: 25pt;
+  font-style: oblique;
+}
+
+.body {
+  background-color: red;
+}
+
+#images {
+  grid-row: auto;
+}
