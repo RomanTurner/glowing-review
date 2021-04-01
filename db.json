@@ -339,8 +339,15 @@
       "password": "mys3cr3T",
       "firstName": "Firstname",
       "lastName": "Lastname",
-      "favorites": []
+      "favorites": [
+        10,
+        9,
+        3
+      ],
+      "reviews": [
+        "my first review",
+        "my second review"
+      ]
     }
   ]
-
 }
