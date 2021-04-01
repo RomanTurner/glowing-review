@@ -14,7 +14,7 @@ const findFave = (restaurants, favorites) => {
 export default class MyProfile extends Component {
  
     render() {
-        const { firstName, lastName, image, favorites} = this.props.userInfo;
+        const { firstName, lastName, image, favorites, reviews} = this.props.userInfo;
        
         return (
             <div className="profile">
@@ -25,17 +25,15 @@ export default class MyProfile extends Component {
                 <div className="profile-image">
                     <img class="ui small circular image" src={image} />
                 </div>
-                <div className="ui cards">
                  <div id="profile-favorites">My Favorites</div>
-                    {favorites === undefined  ? null : (
+                    <div class="favCards">{favorites === undefined  ? null : (
                     <BusinessCardContainer className="ui segment" restaurants={findFave(this.props.restaurants, favorites)} favoriteRes={this.props.favoriteRes}/>
                     )}
-                </div>
+                    </div>
                 <div className="my-reviews">My Reviews</div>
                 <div className="reviews">
                     <ReviewContainer />
-                    <p>My first review!</p>
-                    <p>My second review!</p>
+                    <p>{reviews}</p>
                 </div>
             </div>
         )
