@@ -2,6 +2,8 @@ import React, { Component } from 'react'
 // import SearchBar from "./SearchPage";
 // import BusinessProfile from "./BusinessProfile";
 // import MyProfile from "./MyProfile";
+import "../App.css"
+
 
 export default class Navigation extends Component {
 

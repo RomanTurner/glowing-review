@@ -4,6 +4,7 @@ import Navigation from "./container/Navigation";
 import SearchPage from "./container/SearchPage";
 import "semantic-ui-css/semantic.min.css";
 import MyProfile from "./container/MyProfile";
+import BusinessProfile from "./container/BusinessProfile";
 
 
 export default class App extends Component {
@@ -11,6 +12,7 @@ export default class App extends Component {
     restaurants: [],
     users: [{}],
     searchTerm: "",
+    business: {}
   };
 
   componentDidMount = () => {
@@ -31,6 +33,12 @@ export default class App extends Component {
     });
   };
 
+  onBusinessClick = (e) => {
+    this.setState({
+      business: e
+    })
+  }
+
   handleDisplay = () => {
     if (this.state.searchTerm.length > 0) {
       return this.state.restaurants.filter((r) =>
@@ -50,11 +58,13 @@ export default class App extends Component {
           restaurants={this.state.restaurants}
           onSearchChange={this.onSearchChange}
           handleDisplay={this.handleDisplay()}
+          onBusinessClick={this.onBusinessClick}
         />
-        <MyProfile
+        {/* <MyProfile
           favoriteRes={this.favoriteRes}
           userInfo={this.state.users[0]}
-        />
+        /> */}
+        <BusinessProfile restaurants={this.state.restaurants} business={this.state.business}/>
       </div>
     );
   }
