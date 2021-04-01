@@ -12,8 +12,7 @@ export default class App extends Component {
     restaurants: [],
     users: [{}],
     searchTerm: "",
-    business: {},
-    reviews: ""
+    business: {}
   };
 
   componentDidMount = () => {
@@ -48,18 +47,9 @@ export default class App extends Component {
     })
   }
 
-
-
-  likeBusiness = (business) => {
-    fetch(`http://localhost:3000/restaurants/${business.id}`, {
-      method:"PATCH",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify({"likes":business.likes+1})
-    })
-    .then(res => res.json())
-    .then(buz => this.setState({business: buz}))
+  addLike = (likes) => {
+    likes=likes++
+    console.log(likes)
   }
 
   handleDisplay = () => {
@@ -86,22 +76,9 @@ export default class App extends Component {
         <MyProfile
           restaurants={this.state.restaurants}
           favoriteRes={this.favoriteRes}
-          userInfo={this.state.users[0]} 
-          handleSubmitReview={this.handleSubmitReview}
-          handleChange={this.handleChange}
-          onBusinessClick={this.onBusinessClick}
-          business={this.state.business}
-        />
-        <BusinessProfile 
-          restaurants={this.state.restaurants} 
-          business={this.state.business} 
-          handleSubmitReview={this.handleSubmitReview} 
-          handleChange={this.handleChange} 
           userInfo={this.state.users[0]}
-          business={this.state.business}
-          onBusinessClick={this.onBusinessClick}
-          likeBusiness={this.likeBusiness}/>
         />
+        <BusinessProfile restaurants={this.state.restaurants} business={this.state.business} addLike={this.addLike}/>
       </div>
     );
   }
@@ -131,30 +108,8 @@ export default class App extends Component {
       .then(console.log())
       .catch((e) => console.error("e:", e));
   }
-
-  handleChange = (e) => {
-    this.setState({reviews: e.target.value})
-  }
-
-  handleSubmitReview = (e) => {
-    e.preventDefault()
-    let updatedUser = [...this.state.users];
-        updatedUser[0].reviews.push(this.state.reviews);
-    const configObj = {
-       method: "PATCH",
-       headers: {
-         "Content-Type" : "application/json"
-       },
-      body: JSON.stringify({...updatedUser[0]})
-    }
-     fetch("http://localhost:3000/users/1", configObj)
-       .then((r) => r.json())
-       .then(console.log())
-       .catch((e) => console.error("e:", e));
-      e.target.reset()
-  }
-
 }
+
 
 
   

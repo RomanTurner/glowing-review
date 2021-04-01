@@ -181,7 +181,7 @@
         "https://images.happycow.net/venues/1024/19/12/hcmp191253_1044079.jpeg"
       ],
       "address": "430 E 9th St, New York, NY 10009",
-      "likes": 5,
+      "likes": 11,
       "latlng": {
         "lat": 40.727397,
         "lng": -73.983645
@@ -241,7 +241,7 @@
         "https://s3-media0.fl.yelpcdn.com/bphoto/RUDCSYIgnc30jJnH2rvDjQ/o.jpg"
       ],
       "address": "1209 Jackson Ave, Queens, NY 11101",
-      "likes": 0,
+      "likes": 3,
       "latlng": {
         "lat": 40.743797,
         "lng": -73.950652
@@ -270,7 +270,7 @@
         "https://s3-media0.fl.yelpcdn.com/bphoto/xjXDFeJ7wcBq3Z1UMjP7Lw/o.jpg"
       ],
       "address": "5-48 49th Ave, Queens, NY 11101",
-      "likes": 0,
+      "likes": 51,
       "latlng": {
         "lat": 40.743394,
         "lng": -73.954235
@@ -318,6 +318,7 @@
         "ge",
         "test",
         "hdnhgdnhbgsf"
+
       ]
     }
   ]

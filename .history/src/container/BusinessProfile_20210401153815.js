@@ -55,7 +55,8 @@ function glowGraph(rating) {
 }
 
 export default class BusinessProfile extends Component {
-    
+
+
     render() {
         return (
             <div >
@@ -65,11 +66,11 @@ export default class BusinessProfile extends Component {
                     <h3 className="Bussiness-Type">{this.props.business.cuisine_type} </h3>
                     <h4 className="Bussiness-Hours">
                         {this.props.business.operating_hours} 
+            
                     </h4>
+                    <button className="ui form">Write a Review</button>
                     <p className="Phone-Number">{this.props.business.phone}</p>
                     <p className="Address">{this.props.business.address}</p>
-                </div>
-                <div>
                     <div className="ui row">
                         <div  id="images" > 
                         { this.props.business.imgsrc === undefined ? null : imageBuilder(this.props.business.imgsrc)}
@@ -77,23 +78,13 @@ export default class BusinessProfile extends Component {
                     </div>
                     <a className="businessFire"> 
                         <i className='sun icon'></i>
-                        {glowGraph(this.props.business.likes)}
+                        {glowGraph(this.props.likes)}
                         <div></div>
                         <button className="ui button" onClick={() => this.props.likeBusiness(this.props.business)}>Add to Fire {<i className="fire icon" ></i>}</button>
                     </a>
                 </div>
-                <div>
-                    <form className="ui form" onSubmit={(e) => this.props.handleSubmitReview(e)}>
-                        <br/>
-                        <h5>Write a Review!</h5>
-                        <input onChange={(e) => this.props.handleChange(e)} type="text" name="review" placeholder="review" className="input-text"/>
-                        <br/>
-                        <input type="submit" name="submit" value="submit" className="submit" />
-                    </form>
-                </div>
-                <div>
-                    <h1 className="my-reviews">Reviews</h1>
-                </div>
+                <Reviews/>
+                <h1 className="my-reviews">Reviews</h1>
             </div>
         )
     }
