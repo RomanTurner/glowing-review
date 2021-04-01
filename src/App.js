@@ -14,12 +14,19 @@ export default class App extends Component {
   };
 
   componentDidMount = () => {
-    fetch("http://localhost:3000/data")
+    fetch("http://localhost:3000/restaurants")
+      .then((r) => r.json())
+      .then((data) => 
+        this.setState({
+          restaurants: data,
+        })
+      )
+      .catch((e) => console.error("e:", e));
+    fetch("http://localhost:4000/users")
       .then((r) => r.json())
       .then((data) =>
         this.setState({
-          restaurants: data.restaurants,
-          users: data.users,
+          users: data,
         })
       )
       .catch((e) => console.error("e:", e));
@@ -61,12 +68,26 @@ export default class App extends Component {
 
   favoriteRes = (biz) => {
     this.setState(prevState => {
-
       let updatedUser = [...prevState.users];
       updatedUser[0].favorites.push(biz)
       return { users: updatedUser }
     })
- }
+    this.addFave();
+  }
+  
+  addFave = () => {
+   const configObj = {
+      method: "PATCH",
+      headers: {
+        "Content-Type" : "application/json"
+      },
+     body: JSON.stringify({ ...this.state.users })
+    }
+    fetch("http://localhost:4000/users", configObj)
+      .then((r) => r.json())
+      .then(console.log())
+      .catch((e) => console.error("e:", e));
+  }
 }
 
 
