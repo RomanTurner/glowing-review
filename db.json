@@ -47,7 +47,7 @@
         "lng": -73.966393
       },
       "cuisine_type": "Pizza",
-      "operating_hours":"7:30 am - 11:00 pm",
+      "operating_hours": "7:30 am - 11:00 pm",
       "phone": "(917) 265-8378",
       "reviews": [
         {
@@ -209,7 +209,6 @@
         "https://images.getbento.com/accounts/35aeb01e46538353d993d3a286385546/media/V1s9LskZQOKot4ZLWXF0_TheDutch_EvanSung.jpg?w=1800&fit=max&auto=compress,format",
         "https://s3-media0.fl.yelpcdn.com/bphoto/y0uEci7RsI9bumiMIesXSg/o.jpg",
         "https://s3-media0.fl.yelpcdn.com/bphoto/AhzUXz5efCFOLA-yyz9TFQ/o.jpg"
-
       ],
       "address": "131 Sullivan St, New York, NY 10012",
       "likes": 0,
@@ -298,11 +297,27 @@
       "favorites": [
         10,
         9,
-        3
+        3,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6
       ],
       "reviews": [
         "my first review",
-        "my second review"
+        "fda",
+        "test",
+        "testing render",
+        "bgs",
+        "fdagfsbgfs",
+        "fdagfsbgfs",
+        "hgdnhdgbd",
+        "ge",
+        "test",
+        "hdnhgdnhbgsf"
       ]
     }
   ]
