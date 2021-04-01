@@ -12,7 +12,8 @@ export default class App extends Component {
     restaurants: [],
     users: [{}],
     searchTerm: "",
-    business: {}
+    business: {},
+    reviews: ""
   };
 
   componentDidMount = () => {
@@ -43,8 +44,7 @@ export default class App extends Component {
   onBusinessClick = (e, text) => {
     e.text = text
     this.setState({
-      business: e,
-      text: text
+      business: e
     })
   }
 
@@ -86,15 +86,22 @@ export default class App extends Component {
         <MyProfile
           restaurants={this.state.restaurants}
           favoriteRes={this.favoriteRes}
-          userInfo={this.state.users[0]}
+          userInfo={this.state.users[0]} 
+          handleSubmitReview={this.handleSubmitReview}
+          handleChange={this.handleChange}
+          onBusinessClick={this.onBusinessClick}
           business={this.state.business}
-          onBusinessClick={this.onBusinessClick} 
         />
         <BusinessProfile 
-        restaurants={this.state.restaurants} 
-        business={this.state.business} 
-        text={this.state.text} 
-        likeBusiness={this.likeBusiness}/>
+          restaurants={this.state.restaurants} 
+          business={this.state.business} 
+          handleSubmitReview={this.handleSubmitReview} 
+          handleChange={this.handleChange} 
+          userInfo={this.state.users[0]}
+          business={this.state.business}
+          onBusinessClick={this.onBusinessClick}
+          likeBusiness={this.likeBusiness}/>
+        />
       </div>
     );
   }
@@ -124,8 +131,30 @@ export default class App extends Component {
       .then(console.log())
       .catch((e) => console.error("e:", e));
   }
-}
 
+  handleChange = (e) => {
+    this.setState({reviews: e.target.value})
+  }
+
+  handleSubmitReview = (e) => {
+    e.preventDefault()
+    let updatedUser = [...this.state.users];
+        updatedUser[0].reviews.push(this.state.reviews);
+    const configObj = {
+       method: "PATCH",
+       headers: {
+         "Content-Type" : "application/json"
+       },
+      body: JSON.stringify({...updatedUser[0]})
+    }
+     fetch("http://localhost:3000/users/1", configObj)
+       .then((r) => r.json())
+       .then(console.log())
+       .catch((e) => console.error("e:", e));
+      e.target.reset()
+  }
+
+}
 
 
   
