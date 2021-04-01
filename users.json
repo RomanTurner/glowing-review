@@ -1,0 +1,135 @@
+{
+  "users": [
+    {
+      "0": {
+        "id": "1",
+        "email": "someone1@example.com",
+        "image": "https://s3-media0.fl.yelpcdn.com/photo/N8sHJJuroewE8rCpvaE0nw/o.jpg",
+        "password": "mys3cr3T",
+        "firstName": "Firstname",
+        "lastName": "Lastname",
+        "favorites": [
+          {
+            "id": 10,
+            "name": "Casa Enrique",
+            "neighborhood": "Queens",
+            "imgsrc": [
+              "https://images.pexels.com/photos/6287544/pexels-photo-6287544.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
+              "https://images.pexels.com/photos/33162/food-restaurant-menu-asia.jpg?auto=compress&cs=tinysrgb&dpr=2&w=500",
+              "https://images.pexels.com/photos/955137/pexels-photo-955137.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
+              "https://images.pexels.com/photos/2347311/pexels-photo-2347311.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+            ],
+            "address": "5-48 49th Ave, Queens, NY 11101",
+            "likes": 0,
+            "latlng": {
+              "lat": 40.743394,
+              "lng": -73.954235
+            },
+            "cuisine_type": "Mexican",
+            "operating_hours": {
+              "Monday": "5:00 pm - 12:00 am",
+              "Tuesday": "5:00 pm - 12:00 am",
+              "Wednesday": "5:00 pm - 12:00 am",
+              "Thursday": "5:00 pm - 12:00 am",
+              "Friday": "5:00 pm - 12:00 am",
+              "Saturday": "11:00 am - 12:00 am",
+              "Sunday": "11:00 am - 12:00 am"
+            },
+            "reviews": [
+              {
+                "user": "",
+                "comments": ""
+              }
+            ]
+          },
+          {
+            "id": 1,
+            "name": "Mission Chinese Food",
+            "neighborhood": "Manhattan",
+            "imgsrc": [
+              "https://images.pexels.com/photos/6287544/pexels-photo-6287544.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
+              "https://images.pexels.com/photos/33162/food-restaurant-menu-asia.jpg?auto=compress&cs=tinysrgb&dpr=2&w=500",
+              "https://images.pexels.com/photos/955137/pexels-photo-955137.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
+              "https://images.pexels.com/photos/2347311/pexels-photo-2347311.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+            ],
+            "address": "171 E Broadway, New York, NY 10002",
+            "likes": 5,
+            "latlng": {
+              "lat": 40.713829,
+              "lng": -73.989667
+            },
+            "cuisine_type": "Asian",
+            "operating_hours": {
+              "Monday": "5:30 pm - 11:00 pm",
+              "Tuesday": "5:30 pm - 12:00 am",
+              "Wednesday": "5:30 pm - 12:00 am",
+              "Thursday": "5:30 pm - 12:00 am",
+              "Friday": "5:30 pm - 12:00 am",
+              "Saturday": "12:00 pm - 4:00 pm, 5:30 pm - 12:00 am",
+              "Sunday": "12:00 pm - 4:00 pm, 5:30 pm - 11:00 pm"
+            },
+            "reviews": [
+              {
+                "user": "",
+                "comments": ""
+              }
+            ]
+          }
+        ],
+        "reviews": [
+          {
+            "companyName": "Golden Compass",
+            "comment": "Blard blag blarh"
+          }
+        ]
+      },
+      "id": "1",
+      "email": "someone1@example.com",
+      "image": "https://s3-media0.fl.yelpcdn.com/photo/N8sHJJuroewE8rCpvaE0nw/o.jpg",
+      "password": "mys3cr3T",
+      "firstName": "Firstname",
+      "lastName": "Lastname",
+      "favorites": [
+        {
+          "id": 10,
+          "name": "Casa Enrique",
+          "neighborhood": "Queens",
+          "imgsrc": [
+            "https://images.pexels.com/photos/6287544/pexels-photo-6287544.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
+            "https://images.pexels.com/photos/33162/food-restaurant-menu-asia.jpg?auto=compress&cs=tinysrgb&dpr=2&w=500",
+            "https://images.pexels.com/photos/955137/pexels-photo-955137.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
+            "https://images.pexels.com/photos/2347311/pexels-photo-2347311.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+          ],
+          "address": "5-48 49th Ave, Queens, NY 11101",
+          "likes": 0,
+          "latlng": {
+            "lat": 40.743394,
+            "lng": -73.954235
+          },
+          "cuisine_type": "Mexican",
+          "operating_hours": {
+            "Monday": "5:00 pm - 12:00 am",
+            "Tuesday": "5:00 pm - 12:00 am",
+            "Wednesday": "5:00 pm - 12:00 am",
+            "Thursday": "5:00 pm - 12:00 am",
+            "Friday": "5:00 pm - 12:00 am",
+            "Saturday": "11:00 am - 12:00 am",
+            "Sunday": "11:00 am - 12:00 am"
+          },
+          "reviews": [
+            {
+              "user": "",
+              "comments": ""
+            }
+          ]
+        }
+      ],
+      "reviews": [
+        {
+          "companyName": "Golden Compass",
+          "comment": "Blard blag blarh"
+        }
+      ]
+    }
+  ]
+}

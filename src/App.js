@@ -12,16 +12,22 @@ export default class App extends Component {
     restaurants: [],
     users: [{}],
     searchTerm: "",
-    business: {}
   };
 
   componentDidMount = () => {
-    fetch("http://localhost:3000/data")
+    fetch("http://localhost:3000/users")
       .then((r) => r.json())
       .then((data) =>
         this.setState({
-          restaurants: data.restaurants,
-          users: data.users,
+          users: data,
+        })
+      )
+      .catch((e) => console.error("e:", e));
+    fetch("http://localhost:3000/restaurants")
+      .then((r) => r.json())
+      .then((data) =>
+        this.setState({
+          restaurants: data,
         })
       )
       .catch((e) => console.error("e:", e));
@@ -32,12 +38,6 @@ export default class App extends Component {
       searchTerm: e.target.value,
     });
   };
-
-  onBusinessClick = (e) => {
-    this.setState({
-      business: e
-    })
-  }
 
   handleDisplay = () => {
     if (this.state.searchTerm.length > 0) {
@@ -58,37 +58,43 @@ export default class App extends Component {
           restaurants={this.state.restaurants}
           onSearchChange={this.onSearchChange}
           handleDisplay={this.handleDisplay()}
-          onBusinessClick={this.onBusinessClick}
         />
-        {/* <MyProfile
+        <MyProfile
+          restaurants={this.state.restaurants}
           favoriteRes={this.favoriteRes}
           userInfo={this.state.users[0]}
-        /> */}
-        <BusinessProfile restaurants={this.state.restaurants} business={this.state.business}/>
+        />
       </div>
     );
   }
 
   favoriteRes = (biz) => {
-    this.setState(prevState => {
-
-      let updatedUser = [...prevState.users];
-      updatedUser[0].favorites.push(biz)
-      return { users: updatedUser }
-    })
-    this.addFavorite()
- }
-
- addFavorite = () => {
-   fetch("http://localhost:3000/data", {
-     method: "PATCH",
-     headers: { "Content-Type" : "application/json"},
-    //  body: JSON.stringify(this.state.users)
-     body: JSON.stringify()
-   })
-   .then(response => response.json())
-   .then(fav => console.log(this.state.users))
-  //  .then(fav => console.log(this.state.users[0].favorites))
+    this.setState(
+      (prevState) => {
+        let updatedUser = [...prevState.users];
+        updatedUser[0].favorites.push(biz.id);
+        return { users: updatedUser };
+      },
+      () => this.addFave()
+    );
+  }
+  
+  addFave = () => {
+   const configObj = {
+      method: "PATCH",
+      headers: {
+        "Content-Type" : "application/json"
+      },
+     body: JSON.stringify({ ...this.state.users[0]})
+   }
+    
+    fetch("http://localhost:3000/users/1", configObj)
+      .then((r) => r.json())
+      .then(console.log())
+      .catch((e) => console.error("e:", e));
+  }
 }
 
-}
+
+
+  
