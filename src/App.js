@@ -76,7 +76,19 @@ export default class App extends Component {
       updatedUser[0].favorites.push(biz)
       return { users: updatedUser }
     })
+    this.addFavorite()
  }
+
+ addFavorite = () => {
+   fetch("http://localhost:3000/data", {
+     method: "PATCH",
+     headers: { "Content-Type" : "application/json"},
+    //  body: JSON.stringify(this.state.users)
+     body: JSON.stringify()
+   })
+   .then(response => response.json())
+   .then(fav => console.log(this.state.users))
+  //  .then(fav => console.log(this.state.users[0].favorites))
 }
 
-
+}

@@ -4,12 +4,8 @@ import React, { Component } from 'react'
 // import MyProfile from "./MyProfile";
 import "../App.css"
 
+
 export default class Navigation extends Component {
-
-// state={
-//     loggedIn: false
-// }
-
 
     render() {
         return (

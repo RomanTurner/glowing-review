@@ -62,10 +62,31 @@ padding: 75px;
   color: #61dafb;
 }
 
+#title{
+  flex: auto;
+  text-align: center;
+  padding-top: 5px;
+  color: #ffff66;
+  text-shadow: 0 0 1.5px #000;
+  font-size: 30px;
+  padding-left: 160px;
+}
+
+#navbar{
+  background:lightyellow;
+  font-family: sans-serif;
+  
+}
+
+.profile {
+  background-color: #fff1c0;
+}
 
 .my-name {
   padding: 30px;
   font-size: 25pt;
+  color: #ffff66;
+  text-shadow: 0 0 1.5px #000;
 }
 
 .profile-image {
@@ -83,15 +104,28 @@ padding: 75px;
   padding-top: 40px;
   padding-bottom: 40px;
   font-size: 25pt;
-  font-style: oblique;
+  background-color: white;
+}
+
+.favCards {
+  padding-left: 30px;
+  padding-bottom: 30px;
+  background-color: white;
 }
 
 .my-reviews {
   padding-left: 30px;
-  padding-top: 20px;
-  padding-bottom: 40px;
+  padding-top: 30px;
+  padding-bottom: 30px;
   font-size: 25pt;
-  font-style: oblique;
+  color: #ffff66;
+  text-shadow: 0 0 1.5px #000;
+}
+
+.reviews {
+  padding-left: 30px;
+  padding-bottom: 200px;
+  font-size: 14pt;
 }
 
 .body {
@@ -105,3 +139,4 @@ padding: 75px;
 .businessImage{
   height: 300px;
 }
+
