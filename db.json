@@ -333,15 +333,6 @@
   ],
   "users": [
     {
-      "0": {
-        "id": "1",
-        "email": "someone1@example.com",
-        "image": "https://s3-media0.fl.yelpcdn.com/photo/N8sHJJuroewE8rCpvaE0nw/o.jpg",
-        "password": "mys3cr3T",
-        "firstName": "Firstname",
-        "lastName": "Lastname",
-        "favorites": []
-      },
       "id": "1",
       "email": "someone1@example.com",
       "image": "https://s3-media0.fl.yelpcdn.com/photo/N8sHJJuroewE8rCpvaE0nw/o.jpg",

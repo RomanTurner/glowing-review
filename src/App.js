@@ -400,12 +400,14 @@ export default class App extends Component {
   }
 
   favoriteRes = (biz) => {
-    this.setState(prevState => {
-      let updatedUser = [...prevState.users];
-      updatedUser[0].favorites.push(biz.id)
-      return { users: updatedUser }
-    })
-    // this.addFave();
+    this.setState(
+      (prevState) => {
+        let updatedUser = [...prevState.users];
+        updatedUser[0].favorites.push(biz.id);
+        return { users: updatedUser };
+      },
+      () => this.addFave()
+    );
   }
   
   addFave = () => {
@@ -414,8 +416,9 @@ export default class App extends Component {
       headers: {
         "Content-Type" : "application/json"
       },
-     body: JSON.stringify({ ...this.state.users})
-    }
+     body: JSON.stringify({ ...this.state.users[0]})
+   }
+    
     fetch("http://localhost:3000/users/1", configObj)
       .then((r) => r.json())
       .then(console.log())
