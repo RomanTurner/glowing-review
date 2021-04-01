@@ -70,22 +70,22 @@ const text = glowGraph(props.info.likes)
     return (
       <>
         {/* Need to add onclick will go to business page */}
-        <div style={{ boxShadow: `${glowShadow(props.info.likes)}`}} className='ui card'>
-          <div className='image'>
+        <div style={{ boxShadow: `${glowShadow(props.info.likes)}`}} class='ui card'>
+          <div class='image'>
             <img src={props.info.imgsrc[randomNum()]} />
           </div>
-          <div className='content'>
-            <a className='header' onClick={() => props.onBusinessClick(props.info, text)}>{props.info.name} </a>
-            <div className='meta'>
-              <span className='date'>{props.info.cuisine_type}</span>
+          <div class='content'>
+            <a class='header' onClick={() => props.onBusinessClick(props.info, text)}>{props.info.name} </a>
+            <div class='meta'>
+              <span class='date'>{props.info.cuisine_type}</span>
             </div>
-            <div className='description'>{props.info.address}</div>
+            <div class='description'>{props.info.address}</div>
           </div>
-          <div id='glowCard' className='extra content'>
+          <div id='glowCard' class='extra content'>
             <a>
-              <i className='sun icon'></i>
+              <i class='sun icon'></i>
               {glowGraph(props.info.likes)}
-              <button className="ui button" onClick={() => props.favoriteRes(props.info)}>Favorite</button>
+              <button class="ui button" onClick={() => props.favoriteRes(props.info)}>Favorite</button>
             </a>
           </div>
         </div>

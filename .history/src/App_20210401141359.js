@@ -43,23 +43,12 @@ export default class App extends Component {
   onBusinessClick = (e, text) => {
     e.text = text
     this.setState({
-      business: e,
-      text: text
+      business: e
     })
   }
 
-
-
-  likeBusiness = (business) => {
-    fetch(`http://localhost:3000/restaurants/${business.id}`, {
-      method:"PATCH",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify({"likes":business.likes+1})
-    })
-    .then(res => res.json())
-    .then(buz => this.setState({business: buz}))
+  addLike = (id) => {
+    console.log(id)
   }
 
   handleDisplay = () => {
@@ -87,14 +76,8 @@ export default class App extends Component {
           restaurants={this.state.restaurants}
           favoriteRes={this.favoriteRes}
           userInfo={this.state.users[0]}
-          business={this.state.business}
-          onBusinessClick={this.onBusinessClick} 
         />
-        <BusinessProfile 
-        restaurants={this.state.restaurants} 
-        business={this.state.business} 
-        text={this.state.text} 
-        likeBusiness={this.likeBusiness}/>
+        <BusinessProfile restaurants={this.state.restaurants} business={this.state.business} addLike={this.addLike}/>
       </div>
     );
   }

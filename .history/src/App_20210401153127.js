@@ -87,14 +87,8 @@ export default class App extends Component {
           restaurants={this.state.restaurants}
           favoriteRes={this.favoriteRes}
           userInfo={this.state.users[0]}
-          business={this.state.business}
-          onBusinessClick={this.onBusinessClick} 
         />
-        <BusinessProfile 
-        restaurants={this.state.restaurants} 
-        business={this.state.business} 
-        text={this.state.text} 
-        likeBusiness={this.likeBusiness}/>
+        <BusinessProfile restaurants={this.state.restaurants} business={this.state.business} likeBusiness={this.likeBusiness}/>
       </div>
     );
   }

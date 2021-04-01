@@ -28,7 +28,7 @@ export default class MyProfile extends Component {
                 <div className="ui cards">
                  <div id="profile-favorites">My Favorites</div>
                     {favorites === undefined  ? null : (
-                    <BusinessCardContainer className="ui segment" restaurants={findFave(this.props.restaurants, favorites)} onBusinessClick={this.props.onBusinessClick} favoriteRes={this.props.favoriteRes}/>
+                    <BusinessCardContainer className="ui segment" restaurants={findFave(this.props.restaurants, favorites)} favoriteRes={this.props.favoriteRes}/>
                     )}
                 </div>
                 <div className="my-reviews">My Reviews</div>

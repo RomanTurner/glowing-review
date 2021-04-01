@@ -78,7 +78,7 @@ export default class BusinessProfile extends Component {
                     </div>
                     <a className="businessFire"> 
                         <i className='sun icon'></i>
-                        {glowGraph(this.props.business.likes)}
+                        {glowGraph(this.props.likes)}
                         <div></div>
                         <button className="ui button" onClick={() => this.props.likeBusiness(this.props.business)}>Add to Fire {<i className="fire icon" ></i>}</button>
                     </a>
