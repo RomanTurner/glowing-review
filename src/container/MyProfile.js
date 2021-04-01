@@ -1,21 +1,30 @@
 import React, { Component } from 'react';
 import BusinessCardContainer from './BusinessCardContainer';
-import ReviewContainer from './ReviewContainer';
+// import ReviewContainer from './ReviewContainer';
 import Navigation from './Navigation'
+import Reviews from '../component/Reviews'
 // import BusinessCard from '../component/BusinessCard';
 
 
 const findFave = (restaurants, favorites) => {
     const res = restaurants.filter((b) => favorites.includes(b.id));
-    console.log(res);
+    // console.log(res);
     return res;
 }
+
+const myReviews = (reviews) => {
+    return reviews.map((reviews) => (
+        <Reviews
+        rev={reviews}
+        />
+    ))
+}   
 
 export default class MyProfile extends Component {
  
     render() {
-        const { firstName, lastName, image, favorites, reviews} = this.props.userInfo;
-       
+        const { firstName, lastName, image, favorites} = this.props.userInfo;
+        
         return (
             <div className="profile">
                 <Navigation />
@@ -31,11 +40,14 @@ export default class MyProfile extends Component {
                     )}
                     </div>
                 <div className="my-reviews">My Reviews</div>
-                <div className="reviews">
-                    <ReviewContainer />
-                    <p>{reviews}</p>
-                </div>
+                    <div className="reviews">
+                        {this.props.userInfo.reviews === undefined ? null : myReviews(this.props.userInfo.reviews)}
+                        {/* <Reviews reviews={this.props.userInfo.reviews.map(review => <p>{review}</p>)}/> */}
+                    </div>
             </div>
         )
     }
 }
+{/* // .map(review => <p>{review}</p>)
+// .filter(review => review.length>0) */}
+
