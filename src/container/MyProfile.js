@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import BusinessCardContainer from './BusinessCardContainer';
 import ReviewContainer from './ReviewContainer';
+import Navigation from './Navigation'
 // import BusinessCard from '../component/BusinessCard';
 
 
@@ -17,6 +18,7 @@ export default class MyProfile extends Component {
        
         return (
             <div className="profile">
+                <Navigation />
                 <div className="profile-name">
                     <h2 className="my-name">{firstName} {lastName}</h2>
                 </div>
@@ -24,14 +26,16 @@ export default class MyProfile extends Component {
                     <img class="ui small circular image" src={image} />
                 </div>
                 <div className="ui cards">
-                    My Favorites
+                 <div id="profile-favorites">My Favorites</div>
                     {favorites === undefined  ? null : (
                     <BusinessCardContainer className="ui segment" restaurants={findFave(this.props.restaurants, favorites)} favoriteRes={this.props.favoriteRes}/>
                     )}
-                    </div>
-                <div className="my-reviews">
-                    My Reviews
+                </div>
+                <div className="my-reviews">My Reviews</div>
+                <div className="reviews">
                     <ReviewContainer />
+                    <p>My first review!</p>
+                    <p>My second review!</p>
                 </div>
             </div>
         )
