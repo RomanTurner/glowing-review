@@ -60,7 +60,12 @@ export default class App extends Component {
   }
 
   favoriteRes = (biz) => {
-    this.setState({users:[...this.state.users,biz]})
+    this.setState(prevState => {
+
+      let updatedUser = [...prevState.users];
+      updatedUser[0].favorites.push(biz)
+      return { users: updatedUser }
+    })
  }
 }
 
