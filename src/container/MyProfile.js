@@ -4,21 +4,29 @@ import ReviewContainer from './ReviewContainer';
 // import BusinessCard from '../component/BusinessCard';
 
 
-export default class MyProfile extends Component {
+const findFave = (restaurants, favorites) => {
+    const res = restaurants.filter((b) => favorites.includes(b.id));
+    console.log(res);
+    return res;
+}
 
+export default class MyProfile extends Component {
+ 
     render() {
+        const { firstName, lastName, image, favorites} = this.props.userInfo;
+       
         return (
             <div className="profile">
                 <div className="profile-name">
-                    <h2 className="my-name">{this.props.userInfo.firstName} {this.props.userInfo.lastName}</h2>
+                    <h2 className="my-name">{firstName} {lastName}</h2>
                 </div>
                 <div className="profile-image">
-                    <img class="ui small circular image" src={this.props.userInfo.image} />
+                    <img class="ui small circular image" src={image} />
                 </div>
                 <div className="ui cards">
                     My Favorites
-                    {this.props.userInfo.favorites === undefined ? null : (
-                    <BusinessCardContainer className="ui segment" restaurants={this.props.userInfo.favorites} favoriteRes={this.props.favoriteRes}/>
+                    {favorites === undefined  ? null : (
+                    <BusinessCardContainer className="ui segment" restaurants={findFave(this.props.restaurants, favorites)} favoriteRes={this.props.favoriteRes}/>
                     )}
                     </div>
                 <div className="my-reviews">
