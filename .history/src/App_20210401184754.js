@@ -148,13 +148,13 @@ export default class App extends Component {
     }
      fetch("http://localhost:3000/users/1", configObj)
        .then((r) => r.json())
-       .then(()=> this.addBusinessReview())
+       .then(()=> addBusinessReview())
        .catch((e) => console.error("e:", e));
       e.target.reset()
   }
 
-   addBusinessReview = () => {
-    let updatedBusiness = {...this.state.business};
+  addBusinessReview = () => {
+    let updatedBusiness = [...this.state.business];
         updatedBusiness.reviews.push(this.state.reviews);
     const configObj = {
        method: "PATCH",
@@ -168,6 +168,7 @@ export default class App extends Component {
        .then(console.log())
        .catch((e) => console.error("e:", e));
   }
+
 }
 
 

@@ -49,6 +49,7 @@ padding: 75px;
 #navbar{
   background:lightyellow;
   font-family: sans-serif;
+  
 }
 
 .App-header {
@@ -152,23 +153,5 @@ padding: 75px;
 .businessInfo{
   text-align: center;
   padding-bottom: 20px;
-  padding-top: 10px;
-  background-color: #fff1c0;
 }
-
-.businessPage{
-  background-color: #fff1c0;
-}
-
-.fireSaying{
-  margin-top: 20px;
-  font-size: 20px;
-}
-
-#reviewForm{
-  padding-left: 30px;
-  padding-right:30px
-}
-
-
 

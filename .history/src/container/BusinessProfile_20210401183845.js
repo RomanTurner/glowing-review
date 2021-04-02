@@ -12,14 +12,6 @@ const imageBuilder = (images) => {
     ))
 }
 
-const myReviews = (reviews) => {
-    return reviews.map((reviews) => (
-        <Reviews
-        rev={reviews}
-        />
-    ))
-}   
-
 function glowGraph(rating) {
     const glowUp = {
     1: "EVERY FIRE STARTS SMALL",
@@ -106,9 +98,6 @@ export default class BusinessProfile extends Component {
                 </div>
                 <div>
                     <h1 className="my-reviews">Reviews</h1>
-                    <div className="reviews">
-                        {this.props.business.reviews === undefined ? null : myReviews(this.props.business.reviews)}
-                    </div>
                 </div>
             </div>
         )

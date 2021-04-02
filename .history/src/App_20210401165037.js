@@ -148,26 +148,11 @@ export default class App extends Component {
     }
      fetch("http://localhost:3000/users/1", configObj)
        .then((r) => r.json())
-       .then(()=> this.addBusinessReview())
+       .then(console.log())
        .catch((e) => console.error("e:", e));
       e.target.reset()
   }
 
-   addBusinessReview = () => {
-    let updatedBusiness = {...this.state.business};
-        updatedBusiness.reviews.push(this.state.reviews);
-    const configObj = {
-       method: "PATCH",
-       headers: {
-         "Content-Type" : "application/json"
-       },
-      body: JSON.stringify({...updatedBusiness})
-    }
-     fetch(`http://localhost:3000/restaurants/${this.state.business.id}`, configObj)
-       .then((r) => r.json())
-       .then(console.log())
-       .catch((e) => console.error("e:", e));
-  }
 }
 
 

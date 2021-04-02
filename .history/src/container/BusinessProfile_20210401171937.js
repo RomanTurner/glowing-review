@@ -12,14 +12,6 @@ const imageBuilder = (images) => {
     ))
 }
 
-const myReviews = (reviews) => {
-    return reviews.map((reviews) => (
-        <Reviews
-        rev={reviews}
-        />
-    ))
-}   
-
 function glowGraph(rating) {
     const glowUp = {
     1: "EVERY FIRE STARTS SMALL",
@@ -70,7 +62,7 @@ export default class BusinessProfile extends Component {
                 <Navigation/> 
                 <div className="businessInfo">
                     <h1 className="Bussiness-Name">{this.props.business.name}</h1>
-                    <h2 className="Bussiness-Type">{this.props.business.cuisine_type} </h2>
+                    <h3 className="Bussiness-Type">{this.props.business.cuisine_type} </h3>
                     <h4 className="Bussiness-Hours">
                         {this.props.business.operating_hours} 
                     </h4>
@@ -86,7 +78,7 @@ export default class BusinessProfile extends Component {
                    
                 </div>
                 <div id="businessFire"> 
-                        <div className="fireSaying">
+                        <div className="ui medium">
                             <i className='sun icon'></i>
                             {glowGraph(this.props.business.likes)}
                         </div>
@@ -95,7 +87,7 @@ export default class BusinessProfile extends Component {
                         <button className="ui button red" onClick={() => this.props.likeBusiness(this.props.business)}>Add to Fire {<i className="fire icon" ></i>}</button>
                     </div>
                 <div>
-                    <form className="ui form" id="reviewForm" onSubmit={(e) => this.props.handleSubmitReview(e)}>
+                    <form className="ui form" onSubmit={(e) => this.props.handleSubmitReview(e)}>
                         <br/>
                         <h5>Write a Review!</h5>
                         <input onChange={(e) => this.props.handleChange(e)} type="text" name="review" placeholder="review" className="input-text"/>
@@ -106,9 +98,6 @@ export default class BusinessProfile extends Component {
                 </div>
                 <div>
                     <h1 className="my-reviews">Reviews</h1>
-                    <div className="reviews">
-                        {this.props.business.reviews === undefined ? null : myReviews(this.props.business.reviews)}
-                    </div>
                 </div>
             </div>
         )

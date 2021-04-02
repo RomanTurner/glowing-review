@@ -9,7 +9,7 @@ export default class Navigation extends Component {
 
     render() {
         return (
-            <div className="ui menu" id="navbar">
+            <div id="navbar">
                 <h1  id="title" > The Glowing Review</h1>
                 <a className="item right">My Profile</a>
                 </div>
