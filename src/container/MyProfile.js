@@ -8,16 +8,13 @@ import Reviews from '../component/Reviews'
 
 const findFave = (restaurants, favorites) => {
     const res = restaurants.filter((b) => favorites.includes(b.id));
-    // console.log(res);
     return res;
 }
 
-const myReviews = (reviews) => {
-    return reviews.map((reviews) => (
-        <Reviews
-        rev={reviews}
-        />
-    ))
+const myReviews = (reviews, userInfo) => {
+    return reviews.map((review, index) => (
+      <Reviews userInfo={userInfo} key={index} rev={review} />
+    ));
 }   
 
 export default class MyProfile extends Component {
@@ -27,7 +24,6 @@ export default class MyProfile extends Component {
         
         return (
             <div className="profile">
-                <Navigation />
                 <div className="profile-name">
                     <h2 className="my-name">{firstName} {lastName}</h2>
                 </div>
@@ -42,7 +38,7 @@ export default class MyProfile extends Component {
                     </div>
                 <div className="my-reviews">My Reviews</div>
                     <div className="reviews">
-                        {this.props.userInfo.reviews === undefined ? null : myReviews(this.props.userInfo.reviews)}
+                        {this.props.userInfo.reviews === undefined ? null : myReviews(this.props.userInfo.reviews, this.props.userInfo)}
                     </div>
             </div>
         )

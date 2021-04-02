@@ -21,7 +21,14 @@
       "cuisine_type": "Asian",
       "operating_hours": "5:30 pm - 11:00 pm",
       "phone": "(917) 376-5660",
-      "reviews": [],
+      "reviews": [
+        "What a delight",
+        "BOMB.COM",
+        "YUM",
+        "Tasty",
+        "WOAH",
+        "YEAH, this is like the best"
+      ],
       "text": "EVERY FIRE STARTS SMALL"
     },
     {
@@ -37,7 +44,7 @@
         "https://images.pexels.com/photos/1653772/pexels-photo-1653772.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
       ],
       "address": "919 Fulton St, Brooklyn, NY 11238",
-      "likes": 12,
+      "likes": 7,
       "latlng": {
         "lat": 40.683555,
         "lng": -73.966393
@@ -47,7 +54,9 @@
       "phone": "(917) 265-8378",
       "reviews": [
         "Wow so yummy",
-        "So good"
+        "So good",
+        "Yay!",
+        "YUM"
       ],
       "text": "WOAH, THAT IS GETTING BRIGHT"
     },
@@ -136,7 +145,7 @@
         "https://media.guestofaguest.com/t_article_content/gofg-media/2016/06/1/46530/screen_shot_2016-06-22_at_3.18.27_pm.jpg"
       ],
       "address": "454 Van Brunt St, Brooklyn, NY 11231",
-      "likes": 0,
+      "likes": 4,
       "latlng": {
         "lat": 40.674925,
         "lng": -74.016162
@@ -236,7 +245,7 @@
         "https://s3-media0.fl.yelpcdn.com/bphoto/xjXDFeJ7wcBq3Z1UMjP7Lw/o.jpg"
       ],
       "address": "5-48 49th Ave, Queens, NY 11101",
-      "likes": 0,
+      "likes": 17,
       "latlng": {
         "lat": 40.743394,
         "lng": -73.954235
@@ -244,7 +253,9 @@
       "cuisine_type": "Mexican",
       "operating_hours": "5:00 pm - 12:00 am",
       "phone": "(347) 448-6040",
-      "reviews": []
+      "reviews": [
+        "SO GOOD"
+      ]
     }
   ],
   "users": [
@@ -257,11 +268,16 @@
       "lastName": "Goku",
       "favorites": [
         9,
-        3
+        1,
+        1
       ],
       "reviews": [
         "Tasty but too little",
-        "My type of meal, only if it was all you can eat!"
+        "My type of meal, only if it was all you can eat!",
+        "Yay!",
+        "SO GOOD",
+        "YUM",
+        "YUM"
       ]
     }
   ]

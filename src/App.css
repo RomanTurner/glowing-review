@@ -2,6 +2,15 @@
   text-align: center;
 }
 
+#hero {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    min-height: 100%;
+    min-width: 100%;
+}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -14,12 +23,17 @@
   color:#ff8000;
 }
 
-/** Search Bar **/
+/** Search Page **/
 .centered{
   background-color: #fff1c0 !important;
 }
 .massive{
 padding: 75px;
+}
+
+.ui.two.column.scrolling.content{
+  overflow: auto;
+  max-height: 200px;
 }
 /***************/
 
@@ -49,6 +63,8 @@ padding: 75px;
 #navbar{
   background:lightyellow;
   font-family: sans-serif;
+  margin: 0;
+  padding-bottom: 15px;
 }
 
 .App-header {
@@ -76,11 +92,6 @@ padding: 75px;
   padding-left: 100px;
 }
 
-#navbar{
-  background:lightyellow;
-  font-family: sans-serif;
-  
-}
 
 .profile {
   background-color: #fff1c0;
