@@ -154,7 +154,7 @@ export default class App extends Component {
   }
 
    addBusinessReview = () => {
-    let updatedBusiness = {...this.state.business};
+    let updatedBusiness = [...this.state.business];
         updatedBusiness.reviews.push(this.state.reviews);
     const configObj = {
        method: "PATCH",
@@ -168,6 +168,7 @@ export default class App extends Component {
        .then(console.log())
        .catch((e) => console.error("e:", e));
   }
+
 }
 
 

@@ -45,10 +45,7 @@
       "cuisine_type": "Pizza",
       "operating_hours": "7:30 am - 11:00 pm",
       "phone": "(917) 265-8378",
-      "reviews": [
-        "Wow so yummy",
-        "So good"
-      ],
+      "reviews": [],
       "text": "WOAH, THAT IS GETTING BRIGHT"
     },
     {
@@ -251,9 +248,7 @@
       "lastName": "Lastname",
       "favorites": [],
       "reviews": [
-        "So Tasty",
-        "Wow so yummy",
-        "So good"
+        "So Tasty"
       ]
     }
   ]

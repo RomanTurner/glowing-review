@@ -99,6 +99,7 @@ export default class App extends Component {
           handleChange={this.handleChange} 
           userInfo={this.state.users[0]}
           business={this.state.business}
+          handleSubmitReviewBusiness={this.handleSubmitReviewBusiness}
           onBusinessClick={this.onBusinessClick}
           likeBusiness={this.likeBusiness}/>
       </div>
@@ -148,13 +149,14 @@ export default class App extends Component {
     }
      fetch("http://localhost:3000/users/1", configObj)
        .then((r) => r.json())
-       .then(()=> this.addBusinessReview())
+       .then(()=> addBusinessReview())
        .catch((e) => console.error("e:", e));
       e.target.reset()
   }
 
-   addBusinessReview = () => {
-    let updatedBusiness = {...this.state.business};
+  addBusinessReview = () => {
+    e.preventDefault()
+    let updatedBusiness = [...this.state.business];
         updatedBusiness.reviews.push(this.state.reviews);
     const configObj = {
        method: "PATCH",
@@ -165,9 +167,11 @@ export default class App extends Component {
     }
      fetch(`http://localhost:3000/restaurants/${this.state.business.id}`, configObj)
        .then((r) => r.json())
-       .then(console.log())
+       .then(console.log(id))
        .catch((e) => console.error("e:", e));
+      e.target.reset()
   }
+
 }
 
 

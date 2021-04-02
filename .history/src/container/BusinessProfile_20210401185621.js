@@ -106,8 +106,9 @@ export default class BusinessProfile extends Component {
                 </div>
                 <div>
                     <h1 className="my-reviews">Reviews</h1>
+                    <div className="my-reviews">My Reviews</div>
                     <div className="reviews">
-                        {this.props.business.reviews === undefined ? null : myReviews(this.props.business.reviews)}
+                        {this.props.userInfo.reviews === undefined ? null : myReviews(this.props.userInfo.reviews)}
                     </div>
                 </div>
             </div>
