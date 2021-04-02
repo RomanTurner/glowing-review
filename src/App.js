@@ -61,7 +61,6 @@ export default class App extends Component {
               let business = this.state.restaurants.find(
                 (b) => routerProps.match.params.id == b.id
               );
-
               return (
                 <BusinessProfile
                   userInfo={this.state.users[0]}

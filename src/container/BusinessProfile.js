@@ -81,6 +81,7 @@ export default class BusinessProfile extends Component {
   myReviews = (reviews) => {
     return reviews.map((review, index) => <Reviews userInfo={this.props.userInfo} key={index} rev={review} />);
   };
+
   componentDidMount() {
     let business = this.props.business;
     this.setState({ business:business, likes: business.likes });
