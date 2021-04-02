@@ -72,7 +72,10 @@
       "cuisine_type": "Asian",
       "operating_hours": "11:30 am - 2:00 am",
       "phone": "(212) 966-9839",
-      "reviews": []
+      "reviews": [
+        "My type of meal, only if it was all you can eat!"
+      ],
+      "text": "EVERY FIRE STARTS SMALL"
     },
     {
       "id": 4,
@@ -214,7 +217,10 @@
       "cuisine_type": "Asian",
       "operating_hours": "5:00 pm - 10:00 pm",
       "phone": "(917) 868-8903",
-      "reviews": []
+      "reviews": [
+        "Tasty but too little"
+      ],
+      "text": "EVERY FIRE STARTS SMALL"
     },
     {
       "id": 10,
@@ -245,15 +251,17 @@
     {
       "id": "1",
       "email": "someone1@example.com",
-      "image": "https://s3-media0.fl.yelpcdn.com/photo/N8sHJJuroewE8rCpvaE0nw/o.jpg",
+      "image": "https://steamuserimages-a.akamaihd.net/ugc/92727917970158937/46A12017D0D2CE0355566C5BA02505254F224917/",
       "password": "mys3cr3T",
-      "firstName": "Firstname",
-      "lastName": "Lastname",
-      "favorites": [],
+      "firstName": "Son",
+      "lastName": "Goku",
+      "favorites": [
+        9,
+        3
+      ],
       "reviews": [
-        "So Tasty",
-        "Wow so yummy",
-        "So good"
+        "Tasty but too little",
+        "My type of meal, only if it was all you can eat!"
       ]
     }
   ]
