@@ -168,7 +168,7 @@
         "https://images.happycow.net/venues/1024/19/12/hcmp191253_1044079.jpeg"
       ],
       "address": "430 E 9th St, New York, NY 10009",
-      "likes": 52,
+      "likes": 35,
       "latlng": {
         "lat": 40.727397,
         "lng": -73.983645
@@ -268,9 +268,7 @@
       "lastName": "Goku",
       "favorites": [
         9,
-        1,
-        1,
-        3
+        1
       ],
       "reviews": [
         "Tasty but too little",
