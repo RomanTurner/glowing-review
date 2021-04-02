@@ -32,33 +32,33 @@ The website itself opens with a beautiful sunset exemplifying the spirit behind 
 ## Features <a name="features"></a>
 
 - **Navigate** to the search page to see a grid of local restaurants.
-![business preview](/src/img/searchBlock.png)
+![search preview](/src/img/searchblock.png)
 
 ---
 
 - Type into the **search bar** <a name="search"></a> to find specific restaurants, which will show on the business preview section and filter the pins on the map to the right.
-![altText](/src/img/searchAction.gif)
+![search in action](/src/img/searchAction.gif)
 
 ---
 
 - **Favorite**<a name="faves"></a> a restaurant by clicking on the favorite button located on the business preview card. 
-![altText](/src/img/myFavorite.png)
+![favorites section](/src/img/myFavorite.png)
 
 ---
 
 - Go to my **user profile**<a name="user"></a> by clicking the profile route located on the top right of the page.
-![altText](/src/img/myProfile.png)
+![user profile preview](/src/img/myProfile.png)
 
 ---
 
 - See **my profile**<a name="user"></a> info, favorite restaurants, and reviews. 
 Click on a business name on a business preview card to be led to that **businesses’ profile**.
-![altText](/src/img/businessPage.png)
+![business page preview](/src/img/businessPage.png)
 
 ---
 
 - Leave **reviews**<a name="biz"></a> for a restaurant on their business profile page.
-![altText](/src/img/myReview.png)
+![reviews in user page](/src/img/myReview.png)
 
 ---
 
@@ -66,11 +66,11 @@ Click on a business name on a business preview card to be led to that **business
 
 **A restaurant preview before liking**
 --
-![altText](/src/img/beforeLiking.png)
+![a business card before glow up](/src/img/beforeLiking.png)
 
 **A restaurant preview after liking**
 --
-![altText](/src/img/afterLiking.png)
+![a business card after glow up](/src/img/afterLiking.png)
 
 ---
 ## The Struggle is Real <a name="struggle"></a>
@@ -87,21 +87,21 @@ Though there were many struggles, we pushed through to reach our minimum viable 
 
 ### Search Page
 Wire Frame
-![altText](/src/img/searchWireFrame.png)
+![wire frame of search page](/src/img/searchWireFrame.png)
 MVP
-![altText](/src/img/searchPage.png)
+![mvp of search page](/src/img/searchPage.png)
 ---
 ### User Profile
 Wire Frame
-![altText](/src/img/myProfileWireFrame.png)
+![wire frame of user profile](/src/img/myProfileWireFrame.png)
 MVP
-![altText](/src/img/myProfile.png)
+![mvp of user profile](/src/img/myProfile.png)
 ---
 ### Business Profile
 Wire Frame
-![altText](/src/img/bizProfileWireFrame.png)
+![wire frame of business profile](/src/img/bizProfileWireFrame.png)
 MVP
-![altText](/src/img/businessPage.png)
+![mvp of business profile](/src/img/businessPage.png)
 
 
 # Our Favorite Sections of Code <a name="favorites"></a>
@@ -178,7 +178,7 @@ MVP
 ```
 > The gang working hard, or hardly working?
 
-![altText](/src/img/gang-gang.png)
+![project 2 team](/src/img/gang-gang.png)
 
 
 - **Nick:**  My favorite section I worked on was creating the business page. Specifically, I enjoyed implementing the like feature that allowed users to like a business and dynamically change the business’s glow rating. 
